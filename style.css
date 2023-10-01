@@ -1,0 +1,523 @@
+/* Importing the 'Open Sans' font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+/* Resetting default margin, padding, and setting the font family */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Container for the main content with some margins */
+.container {
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 100%;
+}
+
+
+/* Styling for the navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: aquamarine;
+    height: 50px;
+    background: #272E71;
+    color: #F9FAFB;
+    max-width: 100%;
+}
+
+.brand{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px;
+max-width: 100%;
+}
+
+.search{
+display: flex;
+justify-content: center;
+padding: 10px;
+max-width: 100%;
+
+}
+
+
+.input{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+   
+}
+.flip-horizontal {
+    transform: scaleX(-1);
+}
+.typehere{
+    border-radius: 20px;
+    width: 300px;
+}
+.input i{
+  position: relative;
+    left: -25px;
+    color: #8d94a0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Style for the nested icons container (language) */
+.language {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust the gap as needed */
+}
+
+/* Style for the nested icons container (profilenav) */
+.profilenav {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust the gap as needed */
+}
+/* Main content container */
+.main {
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex: 1;
+    background-color: #F9FAFB;
+    max-width: 100%;
+}
+
+/* Left sidebar */
+.left {
+    flex: 0.2;
+    background-color: antiquewhite;
+    background: #F9FAFB;
+    height: 100%;
+    padding-top: 30px;
+    max-width: 100%;
+}
+
+/* Styling for the left profile section */
+.leftprofile {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    max-width: 100%;
+}
+
+/* Styling for the left navigation */
+.leftnav {
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+/* Styling for individual navigation items in the left sidebar */
+.nav1 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-top: 10px;
+    color: #7c8392;
+    font-size: small;
+}
+
+/* Styling for the profile image in the left sidebar */
+.leftprofile img {
+    padding-top: 10px;
+    width: 60px;
+    height: 60px;
+    padding-right: 20px;
+}
+
+/* Styling for the name in the left sidebar */
+.leftprofile h3 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6B7280;
+}
+
+.edit{
+    background-color: #272E71;
+    padding: 5px;
+    color: #E5E7EB;
+}
+
+/* Styling for the navigation information bar */
+.navinfo {
+    background: #F9FAFB;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    color: #6B7280;
+    font-size: 14px;
+    font-weight: 400;
+}
+.navandbutton{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Styling for the headings in the navigation information bar */
+.navinfo h4 {
+    font-size: 12px;
+    font-weight: 200px;
+}
+
+/* Middle content section */
+.middle {
+    flex: 0.7;
+    background-color: blueviolet;
+    background: #F9FAFB;
+    height: 100%;
+    max-width: 100%;
+}
+
+/* Right sidebar */
+.right {
+    flex: 0.1;
+    background-color: aquamarine;
+    background: #F9FAFB;
+    height: 100%;
+}
+/* Styling for cards */
+.card {
+    display: flex;
+    flex: 1;
+    background-color: #FFFFFF;
+    min-height: 400px;
+    align-items: stretch;
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+/* Styling for the card photo */
+.card-photo {
+    height: 250px;
+    width: 100%;
+    background-color: aquamarine;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+/* Styling for images inside the card */
+.card-photo img {
+    max-width: 100%;
+    min-height: 300px;
+    display: block;
+    max-width: 100%;
+}
+
+/* Styling for card text */
+.card-text {
+    padding: 10px;
+    background-color: #FFFFFF;
+    height: 150px;
+    max-width: 100%;
+    overflow: hidden;
+     /* Prevent text from wrapping */
+    text-overflow: ellipsis;
+}
+
+/* Styling for card headings */
+.card-text h2 {
+    font-size: 15px;
+}
+
+/* Styling for card text paragraphs */
+.card-text p {
+    padding-top: 10px;
+    font-size: 14px;
+   
+}
+
+/* Styling for the left side of the card */
+.card-left {
+    flex: 0.6;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for the right side of the card */
+.card-right {
+    flex: 0.4;
+    padding-left: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for images in the card right section */
+.card-right img {
+    padding-top: 20px;
+    width: 200px;
+    height: 36.31px;
+}
+
+/* Styling for profiles in the card right section */
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+/* Styling for profile images */
+.profile img {
+    padding-top: 10px;
+    width: 60px;
+    height: 60px;
+    padding-right: 20px;
+}
+
+/* Styling for the map image */
+.map img {
+    width: 100%; /* Set the width to 100% to make it responsive */
+    max-width: 100%; /* Ensure it doesn't exceed its container */
+    height: auto; /* Allow the height to adjust proportionally */
+}
+
+/* Styling for card right section headings */
+.card-right h2 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #374151;
+}
+
+/* Styling for profile names */
+.profile h3 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6B7280;
+}
+
+/* Styling for location text */
+.location h3 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6B7280;
+}
+
+/* Style for the video container */
+/* Style for the video container */
+.video-card {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: 50px;
+    background-color: #FFFFFF;
+    height: 400px;
+    width: 600px;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+/* Style for the embedded iframe */
+.video-card iframe {
+    padding:40px;
+    width: 100%; /* Use 100% of the container's width */
+    max-width: 100%;
+    height: 200px; /* Allow the height to adjust proportionally */
+    border: none;
+    max-width: 100%;
+}
+
+.video-card p {
+    position: absolute; /* Position relative to the .video-card */
+    top: 20px; /* Adjust the top position as needed */
+    left: 20px; /* Adjust the left position as needed */
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+
+/* Styling for the offer card */
+.Offer-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    margin-top: 10px;
+    background-color: #FFFFFF;
+     max-width: 100%;
+     width: 600px;
+    overflow: hidden;
+    padding: 10px; /* Add some padding for spacing */
+}
+
+
+/* Styling for container boxes */
+.containerbox {
+    display: flex;
+    gap: 100px;
+   
+}
+
+.box h2{
+    color: #818791;
+    font-weight: 100;
+}
+.boxtitle i{
+    color: #8d94a0;
+}
+
+.icons img{
+ height: 30px;
+}
+
+
+/* Styling for box titles */
+.boxtitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    color: #374151;
+}
+
+.labels{
+    display: flex;
+}
+
+.label {
+    width: 50px; /* Adjust the width as needed */
+    background-color: #E5E7EB;
+    color: #212225;
+    border-radius: 12px;
+    padding: 5px 10px; /* Add padding for spacing */
+    font-size: 12px; /* Adjust font size as needed */
+    margin: 5px; /* Add margin around labels for spacing */
+     /* Center text horizontally */
+}
+
+/* Styling for container boxes */
+.containerbox {
+    
+    padding: 20px;
+    gap: 100px;
+}
+/* Add this CSS to make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 767px) {
+
+    .search{
+        display: none;
+    }
+    .icons{
+        display: none;
+    }
+
+    .containerbox {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px; /* Center boxes horizontally */
+    }
+  /* Reduce font size for h2 inside the offer card */
+  .Offer-card {
+    font-size: 14px;
+    /* Adjust font size for smaller screens */
+}
+    /* Hide the left and right sidebars to make content centered vertically */
+    .left, .right {
+        display: none;
+        max-width: 100%;
+    }
+  
+    /* Center the middle content vertically and horizontally */
+    .middle {
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        max-width: 90%; /* Add some padding for spacing */
+    }
+
+    /* Adjust the card layout for vertical stacking */
+    .card {
+        flex-direction: column;
+        height: auto;
+        max-width: 100%;
+    }
+
+    /* Make images responsive within the card-photo */
+    .card-photo img {
+        width: 100%; /* Set the image width to 100% of its container */
+        height: auto; /* Allow the height to adjust proportionally */
+    }
+
+    /* Reduce font size for card heading and text */
+    .card-text h2 {
+        font-size: 14px;
+    }
+    .card-text p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    /* Reduce font size for navbar items */
+    .navbar .brand h1,
+    .navbar .search h1,
+    .navbar .icons h1 {
+        font-size: 14px;
+    }
+
+    /* Prevent horizontal overflow */
+    body {
+        overflow-x: hidden;
+    }
+}
+
+/* For Tablets (e.g., max-width: 991px) */
+@media (max-width: 991px) {
+    /* Hide the left and right sidebars to make content centered vertically */
+    .left, .right {
+        display: none;
+    }
+
+    /* Center the middle content vertically and horizontally */
+    .middle {
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        padding: 20px; /* Add some padding for spacing */
+    }
+
+    /* Adjust the card layout for vertical stacking */
+    .card {
+        flex-direction: column;
+        height: auto;
+    }
+
+    /* Reduce font size for card heading and text */
+    .card-text h2 {
+        font-size: 14px;
+    }
+    .card-text p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    /* Reduce font size for navbar items */
+    .navbar .brand h1,
+    .navbar .search h1,
+    .navbar .icons h1 {
+        font-size: 14px;
+    }
+}
