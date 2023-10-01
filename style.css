@@ -212,7 +212,9 @@ max-width: 100%;
     overflow: hidden;
     max-width: 100%;
 }
-
+.fa-less-than {
+    transform: rotate(-90deg); /* Rotate anti-clockwise by 90 degrees */
+}
 /* Styling for images inside the card */
 .card-photo img {
     max-width: 100%;
@@ -281,11 +283,19 @@ max-width: 100%;
 }
 
 /* Styling for the map image */
+.map {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 20px; /* Add padding as needed */
+    overflow: hidden; /* Hide overflowing content */
+}
+
 .map img {
-    width: 100%; /* Set the width to 100% to make it responsive */
-    max-width: 100%; /* Ensure it doesn't exceed its container */
+    width: 100%; /* Ensure it doesn't exceed its container */
     height: auto; /* Allow the height to adjust proportionally */
 }
+
 
 /* Styling for card right section headings */
 .card-right h2 {
@@ -346,6 +356,7 @@ max-width: 100%;
 
 /* Styling for the offer card */
 .Offer-card {
+    position: relative; 
     display: flex;
     flex-direction: column;
     align-items: center; /* Center horizontally */
@@ -357,11 +368,20 @@ max-width: 100%;
     padding: 10px; /* Add some padding for spacing */
 }
 
+.Offer-card p {
+    position: absolute; /* Position relative to the .Offer-card */
+    top: 0; /* Align to the top edge */
+    left: 0;
+    padding: 10px; /* Align to the left edge */
+}
+
+
 
 /* Styling for container boxes */
 .containerbox {
     display: flex;
     gap: 100px;
+    
    
 }
 
@@ -385,6 +405,7 @@ max-width: 100%;
     gap: 10px;
     font-size: 15px;
     color: #374151;
+    padding: 10px;
 }
 
 .labels{
