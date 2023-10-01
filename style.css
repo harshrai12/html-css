@@ -205,22 +205,22 @@ max-width: 100%;
 }
 
 /* Styling for the card photo */
-.card-photo {
-    height: 250px;
-    width: 100%;
-    background-color: aquamarine;
-    overflow: hidden;
-    max-width: 100%;
-}
+
 .fa-less-than {
     transform: rotate(-90deg); /* Rotate anti-clockwise by 90 degrees */
 }
 /* Styling for images inside the card */
 .card-photo img {
+    height: 250px;
+    width: 100%;
+    background-color: aquamarine;
+    overflow: hidden;
     max-width: 100%;
-    min-height: 300px;
+    object-fit: cover;
+  
+    max-height: auto;
     display: block;
-    max-width: 100%;
+    
 }
 
 /* Styling for card text */
@@ -381,8 +381,6 @@ max-width: 100%;
 .containerbox {
     display: flex;
     gap: 100px;
-    
-   
 }
 
 .box h2{
@@ -437,6 +435,17 @@ img {
 
 
 @media (max-width: 767px) {
+    .navandbutton h4 {
+        max-width: 80px; /* Adjust the maximum width as needed */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
+    }
+    .navinfo{
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
     .search{
         display: none;
@@ -466,7 +475,7 @@ img {
         flex: 1;
         justify-content: center;
         align-items: center;
-        padding: 20px;
+        padding: 10px;
         max-width: 90%; /* Add some padding for spacing */
     }
 
@@ -507,6 +516,11 @@ img {
 
 /* For Tablets (e.g., max-width: 991px) */
 @media (max-width: 991px) {
+    .card-photo img {
+        max-width: 100%; /* Ensure the image doesn't exceed its container */
+        height: auto; /* Allow the height to adjust proportionally */
+    }
+    
     /* Hide the left and right sidebars to make content centered vertically */
     .left, .right {
         display: none;
